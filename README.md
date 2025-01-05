@@ -26,13 +26,13 @@ Neste projeto foi desenvolvido um formulário de Cadastro e listagem de produtos
   - Quando se é cadastrado um novo produto é será redirecionado para a listagem
   - Existi um botão para cadastrar um novo produto a partir da listagem
 
-<div align="center">
+<div>
 
 ![Exemplo de funcionamento do projeto][project-demo]
 
 </div>
 
-## O que foi desenvolvido
+## Importante
 Possuo 3 repósitorios parecido com oque foi pedido, mas com uma complexidade maior e podendo ser aplicado no mundo real.
 
 - 01 - [Trybewarts][Trybe Warts-url] 🧙🏽
