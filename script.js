@@ -7,21 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let products = [];
 
-  // Mostrar a listagem de produtos
   const showList = () => {
     formContainer.classList.add("hidden");
     listContainer.classList.remove("hidden");
     renderProducts();
   };
 
-  // Mostrar o formulário de cadastro
   const showForm = () => {
     formContainer.classList.remove("hidden");
     listContainer.classList.add("hidden");
     productForm.reset();
   };
 
-  // Renderizar produtos na tabela
   const renderProducts = () => {
     productList.innerHTML = "";
     const sortedProducts = products.sort((a, b) => a.value - b.value);
@@ -35,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Evento de envio do formulário
   productForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = document.getElementById("name").value;
@@ -47,6 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
     showList();
   });
 
-  // Evento para exibir o formulário ao clicar no botão "Cadastrar Novo Produto"
   newProductBtn.addEventListener("click", showForm);
 });
